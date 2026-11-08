@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy – Katei Lab Uploader</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+	<div class="wrap">
+		<a class="brand" href="./">Katei Lab Uploader</a>
+		<nav><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a></nav>
+	</div>
+</header>
+<main class="wrap">
+	<h1>Privacy Policy</h1>
+	<p class="lead">Effective date: 2026-11-08</p>
+
+	<h2>1. Use of YouTube API Services</h2>
+	<p>
+		Katei Lab Uploader (“the tool”) uses YouTube API Services to upload videos to YouTube.
+		By using the tool, you agree to be bound by the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>.
+		Google's handling of your data is described in the
+		<a href="https://policies.google.com/privacy">Google Privacy Policy</a> (<a href="http://www.google.com/policies/privacy">http://www.google.com/policies/privacy</a>).
+	</p>
+
+	<h2>2. Information the tool accesses, stores, and shares</h2>
+	<ul>
+		<li><strong>Google sign-in (OAuth 2.0):</strong> the tool requests only the <code>youtube.upload</code> scope. It receives an OAuth token and stores it only on the user's own computer, in a file that only the user can read. The token is never sent anywhere except to Google.</li>
+		<li><strong>Videos and their title, description, and tags:</strong> these are prepared by the user on their own computer and are sent only to YouTube, to upload the video to the user's own channel.</li>
+		<li><strong>Upload results:</strong> the tool keeps the ID and URL of each video the user uploaded, in a file on the user's own computer, so the user can find their own video later.</li>
+		<li>The tool does not read or store any other YouTube data, and it does not collect data about other people.</li>
+		<li>The tool has no server. It does not use cookies, analytics, advertising, or device tracking, and it does not sell or share any information with third parties.</li>
+	</ul>
+
+	<h2>3. How to revoke access and delete data</h2>
+	<ul>
+		<li>You can revoke the tool's access to your Google account at any time from the Google security settings page: <a href="https://security.google.com/settings/security/permissions">https://security.google.com/settings/security/permissions</a>.</li>
+		<li>To delete the stored token, delete the file <code>~/.config/katei-lab-shorts/youtube-token.json</code> on your computer.</li>
+		<li>To delete stored upload results, delete the <code>publish.json</code> files in the tool's folder.</li>
+		<li>Videos on YouTube can be deleted in YouTube Studio.</li>
+	</ul>
+
+	<h2>4. Changes and contact</h2>
+	<p>We will update this page if the way the tool handles data changes. Questions: <a href="https://github.com/stargazer5825ss-cmyk/katei-lab-uploader/issues">GitHub Issues</a></p>
+
+	<section class="ja" lang="ja">
+		<h2>プライバシーポリシー（日本語）</h2>
+		<h3>1. YouTube API サービスの利用</h3>
+		<p>
+			Katei Lab Uploader（この道具）は、動画を YouTube にアップロードするために YouTube API サービスを使います。
+			この道具を使うと、<a href="https://www.youtube.com/t/terms">YouTube 利用規約</a>に同意したことになります。
+			Google によるデータの扱いは <a href="https://policies.google.com/privacy">Google プライバシー ポリシー</a>のとおりです。
+		</p>
+		<h3>2. 触れる情報・保存する情報・共有する情報</h3>
+		<ul>
+			<li>Google のログイン（OAuth 2.0）：権限は <code>youtube.upload</code> だけです。受け取ったトークンは利用者のパソコンの中にだけ、本人だけが読めるファイルとして保存し、Google 以外には送りません。</li>
+			<li>動画とタイトル・説明文・タグ：利用者が自分のパソコンで用意したもので、自分のチャンネルへのアップロードのために YouTube にだけ送ります。</li>
+			<li>アップロードの結果：自分が上げた動画の ID と URL を、利用者のパソコンの中のファイルに残します。</li>
+			<li>ほかの YouTube のデータは読まず、保存もしません。ほかの人のデータも集めません。</li>
+			<li>サーバーはありません。Cookie・アクセス解析・広告・端末の追跡は使わず、情報を第三者に売ったり渡したりしません。</li>
+		</ul>
+		<h3>3. 許可の取り消しとデータの削除</h3>
+		<ul>
+			<li>Google アカウントへの許可は、<a href="https://security.google.com/settings/security/permissions">Google のセキュリティ設定のページ</a>でいつでも取り消せます。</li>
+			<li>保存したトークンは、パソコンの <code>~/.config/katei-lab-shorts/youtube-token.json</code> を消すと削除できます。</li>
+			<li>アップロードの結果は、道具のフォルダの <code>publish.json</code> を消すと削除できます。YouTube の動画は YouTube Studio で削除できます。</li>
+		</ul>
+		<h3>4. 変更と連絡先</h3>
+		<p>データの扱いが変わるときは、このページを更新します。問い合わせ：<a href="https://github.com/stargazer5825ss-cmyk/katei-lab-uploader/issues">GitHub Issues</a></p>
+	</section>
+</main>
+<footer>
+	<div class="wrap">
+		Katei Lab Uploader · <a href="./">Home</a> · <a href="terms.html">Terms of Service</a>
+	</div>
+</footer>
+</body>
+</html>
