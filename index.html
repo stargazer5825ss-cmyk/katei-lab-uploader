@@ -33,10 +33,12 @@
 		<li>The owner reviews the video, its title, and its description, and approves them.</li>
 		<li>The tool uploads the approved video to the owner's channel with the YouTube Data API (<code>videos.insert</code>) as a private video.</li>
 		<li>The owner checks the video and publishes it in YouTube Studio.</li>
+		<li>After the video is public, the tool posts a comment that the owner wrote and approved on that video. The owner pins it in YouTube.</li>
 	</ol>
 	<p>
-		The tool signs in with Google OAuth 2.0 and requests only the
-		<code>https://www.googleapis.com/auth/youtube.upload</code> scope.
+		The tool signs in with Google OAuth 2.0 and requests two scopes:
+		<code>https://www.googleapis.com/auth/youtube.upload</code> (to upload the owner's videos) and
+		<code>https://www.googleapis.com/auth/youtube.force-ssl</code> (only to check whether the owner's own uploaded video is public and to post the owner's comment on it).
 	</p>
 
 	<h2>What it does not do</h2>
@@ -56,7 +58,7 @@
 		<p>
 			Katei Lab Uploader は、YouTube チャンネル「仮定ラボ」の持ち主のパソコンの中だけで動く、非公開のアップロードの道具です。
 			持ち主が作って確かめたショート動画を、YouTube Data API で持ち主自身のチャンネルに（非公開で）アップロードします。
-			権限はアップロードだけ（<code>youtube.upload</code>）で、ほかの人のデータは集めません。
+			権限は、アップロード（<code>youtube.upload</code>）と、自分の動画が公開されたかの確かめ・自分の動画への自分のコメントの投稿（<code>youtube.force-ssl</code>）だけで、ほかの人のデータは集めません。
 			この道具を使うと、<a href="https://www.youtube.com/t/terms">YouTube 利用規約</a>に同意したことになります。
 		</p>
 	</section>

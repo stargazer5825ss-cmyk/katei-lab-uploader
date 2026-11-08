@@ -15,7 +15,7 @@
 </header>
 <main class="wrap">
 	<h1>Privacy Policy</h1>
-	<p class="lead">Effective date: 2026-11-08</p>
+	<p class="lead">Effective date: 2026-11-08 (updated 2026-11-08: added comment posting)</p>
 
 	<h2>1. Use of YouTube API Services</h2>
 	<p>
@@ -27,8 +27,9 @@
 
 	<h2>2. Information the tool accesses, stores, and shares</h2>
 	<ul>
-		<li><strong>Google sign-in (OAuth 2.0):</strong> the tool requests only the <code>youtube.upload</code> scope. It receives an OAuth token and stores it only on the user's own computer, in a file that only the user can read. The token is never sent anywhere except to Google.</li>
+		<li><strong>Google sign-in (OAuth 2.0):</strong> the tool requests the <code>youtube.upload</code> and <code>youtube.force-ssl</code> scopes. It receives an OAuth token and stores it only on the user's own computer, in a file that only the user can read. The token is never sent anywhere except to Google.</li>
 		<li><strong>Videos and their title, description, and tags:</strong> these are prepared by the user on their own computer and are sent only to YouTube, to upload the video to the user's own channel.</li>
+		<li><strong>Video status and comments:</strong> the tool reads only the privacy status of the user's own uploaded videos, and posts one comment that the user wrote and approved on each of those videos after they are public. It does not read, change, or delete any other comments or videos.</li>
 		<li><strong>Upload results:</strong> the tool keeps the ID and URL of each video the user uploaded, in a file on the user's own computer, so the user can find their own video later.</li>
 		<li>The tool does not read or store any other YouTube data, and it does not collect data about other people.</li>
 		<li>The tool has no server. It does not use cookies, analytics, advertising, or device tracking, and it does not sell or share any information with third parties.</li>
@@ -55,8 +56,9 @@
 		</p>
 		<h3>2. 触れる情報・保存する情報・共有する情報</h3>
 		<ul>
-			<li>Google のログイン（OAuth 2.0）：権限は <code>youtube.upload</code> だけです。受け取ったトークンは利用者のパソコンの中にだけ、本人だけが読めるファイルとして保存し、Google 以外には送りません。</li>
+			<li>Google のログイン（OAuth 2.0）：権限は <code>youtube.upload</code> と <code>youtube.force-ssl</code> です。受け取ったトークンは利用者のパソコンの中にだけ、本人だけが読めるファイルとして保存し、Google 以外には送りません。</li>
 			<li>動画とタイトル・説明文・タグ：利用者が自分のパソコンで用意したもので、自分のチャンネルへのアップロードのために YouTube にだけ送ります。</li>
+			<li>動画の状態とコメント：自分が上げた動画の公開状態だけを読み、公開されたあとで、利用者が書いて OK を出したコメントを1つ書き込みます。ほかのコメントや動画は読まず、変えず、消しません。</li>
 			<li>アップロードの結果：自分が上げた動画の ID と URL を、利用者のパソコンの中のファイルに残します。</li>
 			<li>ほかの YouTube のデータは読まず、保存もしません。ほかの人のデータも集めません。</li>
 			<li>サーバーはありません。Cookie・アクセス解析・広告・端末の追跡は使わず、情報を第三者に売ったり渡したりしません。</li>
